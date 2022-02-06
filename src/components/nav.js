@@ -3,7 +3,7 @@ const Nav = {
         return /* html */`
         <nav>
         <ul class="flex justify-around">
-            <li><a href="/" class="block py-3 px-4 text-white hover:bg-blue-500">Trang chủ</a></li>
+            <li><a href="/home" class="block py-3 px-4 text-white hover:bg-blue-500">Trang chủ</a></li>
             <li><a href="/news" class="block py-3 px-4 text-white hover:bg-blue-500"> News </a></li>
             <li><a href="/signin" class="block py-3 px-4 text-white hover:bg-blue-500">Signin</a></li>
             <li><a href="/signup" class="block py-3 px-4 text-white hover:bg-blue-500">Signup</a></li>

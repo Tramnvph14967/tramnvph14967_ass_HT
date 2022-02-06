@@ -1,7 +1,12 @@
 import Navigo from "navigo";
-import Nav from "./component/client/nav";
-import Header from "../src/component/client/header";
-import Footer from "../src/component/client/footer";
+import HomePage from "./pages/home";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import News from "./pages/news";
+import DetailNewsPage from "./pages/detailNews";
+import signin from "./pages/signin";
+import Signup from "./pages/signup";
+
 export const router = new Navigo("/", { linksSelector: "a" });
 
 const render = (content) => {
@@ -13,7 +18,7 @@ const render = (content) => {
 
 router.on({
     "/": () => {
-        render(Signup.print());
+        render(HomePage.print());
     },
     "/home": () => {
         render(HomePage.print());
