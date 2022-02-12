@@ -5,7 +5,7 @@ import dashboard from "./pages/admin/dashboard";
 import News from "./pages/admin/news/index";
 import Add from "./pages/admin/news/add";
 import Edit from "./pages/admin/news/edit";
-import Account from "./pages/admin/account/account";
+
 
 import { router } from "./main";
 
@@ -29,9 +29,7 @@ router.on({
         render(Edit.print(value.data.id));
     },
    
-    "/admin/account": () => {
-        render(Account.print());
-    },
+    
    
 });
 router.notFound(() => print("Not Found Page"));

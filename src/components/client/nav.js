@@ -31,10 +31,12 @@ const Nav = {
             <nav :class="isOpen ? '' : 'hidden'" class="sm:flex sm:justify-center sm:items-center mt-4">
                 <div class="flex flex-col sm:flex-row">
                     <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/home">Home</a>
+                    <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Product">Product</a>
                     <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/contact">Contact</a>
                     <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/signin">Signin</a>
                     <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/signup">Signup</a>
-                    
+                    <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/error">404</a>
+                    <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/admin/dashboard">Admin</a>
                 </div>
             </nav>
             <div class="relative mt-6 max-w-lg mx-auto">

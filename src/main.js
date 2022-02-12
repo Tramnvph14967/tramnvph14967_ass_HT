@@ -6,8 +6,9 @@ import DetailNewsPage from "./pages/client/detailNews";
 import signin from "./pages/client/signin";
 import Signup from "./pages/client/signup";
 import Contact from "./pages/client/contact";
+import Product from "./pages/client/product";
 import cart from "./pages/client/cart";
-
+import error from "./pages/client/404";
 export const router = new Navigo("/", { linksSelector: "a" });
 
 const render = (content) => {
@@ -24,7 +25,9 @@ router.on({
     "/home": () => {
         render(HomePage.print());
     },
-    
+    "/Product": () => {
+        render(Product.print());
+    },
     "/news/:id": (value) =>{
         console.log(value.data.id);
         render(DetailNewsPage.print(value.data.id));
@@ -40,6 +43,9 @@ router.on({
     },
     "/cart": () => {
         render(cart.print());
+    },
+    "/error": () => {
+        render(error.print());
     },
 });
 router.notFound(() => print("Not Found Page"));
