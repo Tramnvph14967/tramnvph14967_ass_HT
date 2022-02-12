@@ -1,11 +1,12 @@
 import Navigo from "navigo";
-import HomePage from "./pages/home";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import News from "./pages/news";
-import DetailNewsPage from "./pages/detailNews";
-import signin from "./pages/signin";
-import Signup from "./pages/signup";
+import HomePage from "./pages/client/home";
+import Footer from "./components/client/footer";
+import Header from "./components/client/header";
+import DetailNewsPage from "./pages/client/detailNews";
+import signin from "./pages/client/signin";
+import Signup from "./pages/client/signup";
+import Contact from "./pages/client/contact";
+import cart from "./pages/client/cart";
 
 export const router = new Navigo("/", { linksSelector: "a" });
 
@@ -23,18 +24,22 @@ router.on({
     "/home": () => {
         render(HomePage.print());
     },
-    "/news": () => {
-        render(News.print());
-    },
+    
     "/news/:id": (value) =>{
         console.log(value.data.id);
         render(DetailNewsPage.print(value.data.id));
+    },
+    "/contact": () => {
+        render(Contact.print());
     },
     "/signin": () => {
         render(signin.print());
     },
     "/signup": () => {
         render(Signup.print());
+    },
+    "/cart": () => {
+        render(cart.print());
     },
 });
 router.notFound(() => print("Not Found Page"));
