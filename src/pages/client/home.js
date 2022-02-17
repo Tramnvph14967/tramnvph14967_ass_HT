@@ -3,10 +3,69 @@ import TT_SV from "../../data";
 const HomePage = {
     print() {
         return /* html */`
-        <div class="max-w-5xl mx-auto p-2"> 
-        
-        <div>
-                <div class="md:flex mt-8 md:-mx-4">
+        <div class="max-w-5xl mx-auto"> 
+            
+                <div class="flex flex-col items-center max-w-5xl mx-auto">
+                <div class="w-full bg-white rounded overflow-x-hidden flex snap-x">
+                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-1">
+                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+                    </div>
+                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-2">
+                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg" alt="">
+                    </div>
+                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-3">
+                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex">
+                    <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-1">1</a>
+                    <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-2">2</a>
+                    <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-3">3</a>
+                </div>
+        </div>
+        <section class="container mx-auto my-1 flex flex-wrap -m-4">
+            
+            <div class="p-2 md:w-40 ">
+                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
+                    <div>
+                        <a href="">
+                            <p class="text-xs font-medium ml-2 "> Danh mục 1 </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 md:w-40 ">
+                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
+                    <div>
+                        <a href="">
+                            <p class="text-xs font-medium ml-2 "> Danh mục 2 </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 md:w-40 ">
+                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
+                    <div>
+                        <a href="">
+                            <p class="text-xs font-medium ml-2 "> Danh mục 3 </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 md:w-40 ">
+                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
+                    <div>
+                        <a href="">
+                            <p class="text-xs font-medium ml-2 "> Danh mục 4 </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+            <div>
+                <div class="md:flex mt-4 md:-mx-4">
                     <div class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
                         <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
                             <div class="px-10 max-w-xl">
@@ -36,7 +95,7 @@ const HomePage = {
             </div>
             
 
-        <div class="mt-16">
+        <div class="mt-8">
         <h3 class="text-gray-600 text-2xl font-medium">New Product</h3>
         <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
             <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
@@ -105,7 +164,7 @@ const HomePage = {
             
         </div>
     </div>
-    <div class="mt-16">
+    <div class="mt-8">
         <h3 class="text-gray-600 text-2xl font-medium">Featured Products</h3>
         <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
             <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">

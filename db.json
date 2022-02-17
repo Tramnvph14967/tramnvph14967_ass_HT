@@ -1,0 +1,36 @@
+{
+    "user": [
+      {
+        "id": 1,
+        "username": "nguyenvana",
+        "fullname": "Nguyễn Văn A",
+        "email": "abc@gmail.com"
+      },
+      {
+        "id": 2,
+        "username": "admin",
+        "fullname": "Administrator",
+        "email": "admin@gmail.com"
+      },
+      {
+        "id": 3,
+        "username": "admin2",
+        "fullname": "Administrator2",
+        "email": "thanhvien4@gmail.com"
+      }
+    ],
+    "post": [
+      {
+        "id": 1,
+        "title": "Chào ngày mới",
+        "des": "Nội dung tóm tắt bài viết",
+        "content": "Nội dung chi tiết bài viết"
+      },
+      {
+        "id": 2,
+        "title": "Chào ngày mới2",
+        "des": "Nội dung tóm tắt bài viết2",
+        "content": "Nội dung chi tiết bài viết2"
+      }
+    ]
+  }
