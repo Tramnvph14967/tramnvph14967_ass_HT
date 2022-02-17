@@ -1,11 +1,11 @@
 import Nav from "./nav";
 
 const Header = {
-    print() {
+    render() {
         return /* html */`
         <header class="max-w-5xl mx-auto">
             <div >
-                ${Nav.print()}
+                ${Nav.render()}
             </div>
             
             

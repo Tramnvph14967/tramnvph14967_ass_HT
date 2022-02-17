@@ -1,5 +1,5 @@
 const Add = {
-    print() {
+    render() {
         return /* html */`
         <div class="max-w-5xl mx-auto pt-6">
             <form action="#" method="POST">

@@ -1,24 +1,38 @@
 {
-    "user": [
-      {
-        "id": 1,
-        "username": "nguyenvana",
-        "fullname": "Nguyễn Văn A",
-        "email": "abc@gmail.com"
-      },
-      {
-        "id": 2,
-        "username": "admin",
-        "fullname": "Administrator",
-        "email": "admin@gmail.com"
-      },
-      {
-        "id": 3,
-        "username": "admin2",
-        "fullname": "Administrator2",
-        "email": "thanhvien4@gmail.com"
-      }
-    ],
+  "users": [
+    {
+      "email": "tramnvph14967@gmail.com",
+      "password": "$2a$10$fkjIIuLfzwYxJ5FCoEjLI.lfHFEiFaGzweVxybs.jfCY8eB1y2URm",
+      "firstname": "trăm",
+      "lastname": "nguyễn",
+      "gender": "nam",
+      "id": 1
+    },
+    {
+      "email": "nguyenvantram0102@gmail.com",
+      "password": "$2a$10$5eMqh5MZ8T2FtD766DB5cumBL.Ug90iWSEg.9ABVo8.jvMbTPR6bu",
+      "firstname": "trăm",
+      "lastname": "nguyễn",
+      "gender": "nam",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "shose_1",
+      "img": "http://placeimg.com/640/480/fashion",
+      "desc": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "price": "500"
+    },
+    {
+      "id": "2",
+      "name": "shose_2",
+      "img": "http://placeimg.com/640/480/sports",
+      "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "price": "500"
+    }
+  ],
     "post": [
       {
         "id": 1,

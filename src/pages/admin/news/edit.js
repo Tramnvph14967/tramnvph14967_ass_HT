@@ -1,6 +1,8 @@
 import TT_SV from "../../../data";
+
+
 const Edit = {
-    print(id) {
+    render(id) {
         const result = TT_SV.find((post) => post.id == id);
         console.log(result);
         return /* html */`

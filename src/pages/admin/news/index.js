@@ -1,6 +1,6 @@
 import TT_SV from "../../../data";
 const News = {
-    print() {
+    render() {
         return /* html */`
           <div class="max-w-5xl mx-auto pt-10">
           <div class="flex flex-col">

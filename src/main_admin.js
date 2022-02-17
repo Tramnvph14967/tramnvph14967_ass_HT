@@ -9,28 +9,26 @@ import Edit from "./pages/admin/news/edit";
 
 import { router } from "./main";
 
-const render = (content) => {
-    document.getElementById("header").innerHTML = Header.print();
-    document.getElementById("content").innerHTML = content;
-    document.getElementById("footer").innerHTML = Footer.print();
+const print = async (content, id) => {
+    document.getElementById("header").innerHTML = Header.render();
+    document.getElementById("content").innerHTML = await content.render(id);
+    if (content.afterRender) content.afterRender(id);
+    document.getElementById("footer").innerHTML = Footer.render();
 };
 
 router.on({
     "/admin/dashboard": () => {
-        render(dashboard.print());
+        print(dashboard);
     },
     "/admin/news": () => {
-        render(News.print());
+        print(News);
     },
     "/admin/news/add": () => {
-        render(Add.print());
+        print(Add);
     },
-    "/admin/news/edit/:id": (value) => {
-        render(Edit.print(value.data.id));
+    "/admin/news/edit/:id": ({data}) => {
+        print(Edit, data.id);
     },
-   
-    
-   
 });
-router.notFound(() => print("Not Found Page"));
+router.notFound(() => render("Not Found Page"));
 router.resolve();

@@ -1,5 +1,5 @@
 const Nav = {
-    print() {
+    render() {
         return /* html */`
         <header>
         <div class="container mx-auto px-6 py-3">

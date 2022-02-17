@@ -1,6 +1,6 @@
 import data from "../../data";
 const DetailNewsPage = {
-    print(id) {
+    render(id) {
         
         const result = data.find((post) => post.id == id);
         

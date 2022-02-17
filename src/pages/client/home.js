@@ -1,7 +1,7 @@
-import TT_SV from "../../data";
+
 
 const HomePage = {
-    print() {
+    async render() {
         return /* html */`
         <div class="max-w-5xl mx-auto"> 
             

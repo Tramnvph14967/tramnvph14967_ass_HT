@@ -1,5 +1,5 @@
 const error = {
-    print() {
+    render() {
         return /* html */`
         <section>
 

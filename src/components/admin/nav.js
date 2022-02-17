@@ -1,5 +1,5 @@
 const Nav = {
-    print() {
+    render() {
         return /* html */`
 
         `;

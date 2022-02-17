@@ -1,5 +1,5 @@
 const Contact = {
-    print() {
+    render() {
         return /* html */`
         <div class="max-w-5xl mx-auto">
         <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>

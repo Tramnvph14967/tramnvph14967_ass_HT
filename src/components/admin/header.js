@@ -1,7 +1,7 @@
 import nav from "./nav";
 
 const Dashboard = {
-    print() {
+  render() {
         return /* html */`
             <div class="max-w-5xl mx-auto">
             <nav class="bg-gray-800">

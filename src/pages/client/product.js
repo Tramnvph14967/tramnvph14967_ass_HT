@@ -1,5 +1,5 @@
 const Product = {
-    print() {
+    render() {
         return /* html */`
         <div tabindex="0" class=" focus:outline-none">
         <!-- Remove py-8 -->

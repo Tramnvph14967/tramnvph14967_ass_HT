@@ -1,5 +1,5 @@
 const Footer = {
-    print() {
+    render() {
         return /*html*/ `
             <footer class="max-w-5xl mx-auto p-2 bottom-0 h-auto relative bg-gray-900 ">
             <div class="lg:flex  lg:mt-3 md:mx-10 lg:mx-20 lg:justify-between">
