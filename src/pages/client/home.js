@@ -3,9 +3,9 @@
 const HomePage = {
     async render() {
         return /* html */`
-        <div class="max-w-5xl mx-auto"> 
+        <div class="p-2 mx-auto"> 
             
-                <div class="flex flex-col items-center max-w-5xl mx-auto">
+                <div class="flex flex-col items-center mx-auto">
                 <div class="w-full bg-white rounded overflow-x-hidden flex snap-x">
                     <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-1">
                         <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">

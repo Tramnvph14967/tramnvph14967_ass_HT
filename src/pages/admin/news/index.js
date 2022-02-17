@@ -2,7 +2,7 @@ import TT_SV from "../../../data";
 const News = {
     render() {
         return /* html */`
-          <div class="max-w-5xl mx-auto pt-10">
+          <div class="p-2 mx-auto pt-10">
           <div class="flex flex-col">
               <div>
                   <td class="px-6 py-4 text-right text-sm font-medium w-2">

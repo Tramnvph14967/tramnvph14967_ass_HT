@@ -1,9 +1,9 @@
 const Contact = {
     render() {
         return /* html */`
-        <div class="max-w-5xl mx-auto">
+        <div class=" p-2 mx-auto">
         <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>
-        <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
+        <div class=" mx-auto px-6 sm:px-6 lg:px-8 mb-12">
             <div class="bg-white w-full shadow rounded p-8 sm:p-12 -mt-72">
                 <p class="text-3xl font-bold leading-7 text-center">Contact me</p>
                 <form action="" method="post">

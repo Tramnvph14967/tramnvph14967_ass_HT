@@ -1,7 +1,7 @@
 const AboutPage = {
     render() {
         return /* html */`
-            <div class="max-w-5xl mx-auto">
+            <div class="p-2 mx-auto">
                 <main>
                     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                     <!-- Replace with your content -->

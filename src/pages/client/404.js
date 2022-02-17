@@ -3,7 +3,7 @@ const error = {
         return /* html */`
         <section>
 
-        <div class=" max-w-5xl mx-auto bg-black text-white">
+        <div class="mx-auto bg-black text-white">
             <div class="flex h-screen">
                 <div class="m-auto text-center">
                     <div>

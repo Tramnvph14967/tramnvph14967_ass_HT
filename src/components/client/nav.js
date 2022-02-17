@@ -2,7 +2,7 @@ const Nav = {
     render() {
         return /* html */`
         <header>
-        <div class="container mx-auto px-6 py-3">
+        <div class=" mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="hidden w-full text-gray-600 md:flex md:items-center">
                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

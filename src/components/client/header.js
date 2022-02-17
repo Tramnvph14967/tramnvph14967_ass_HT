@@ -3,7 +3,7 @@ import Nav from "./nav";
 const Header = {
     render() {
         return /* html */`
-        <header class="max-w-5xl mx-auto">
+        <header class="mx-auto">
             <div >
                 ${Nav.render()}
             </div>

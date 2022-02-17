@@ -33,18 +33,14 @@
       "price": "500"
     }
   ],
-    "post": [
+    "new": [
       {
         "id": 1,
-        "title": "Chào ngày mới",
-        "des": "Nội dung tóm tắt bài viết",
-        "content": "Nội dung chi tiết bài viết"
-      },
-      {
-        "id": 2,
-        "title": "Chào ngày mới2",
-        "des": "Nội dung tóm tắt bài viết2",
-        "content": "Nội dung chi tiết bài viết2"
+        "tieude": "Chào ngày mới",
+        "hinhanh": "Nội dung tóm tắt bài viết1",
+        "noidung": "Nội dung chi tiết bài viết2",
+        "chitet": "Nội dung chi tiết bài viết3"
       }
+      
     ]
   }

@@ -1,7 +1,7 @@
 const Add = {
     render() {
         return /* html */`
-        <div class="max-w-5xl mx-auto pt-6">
+        <div class="p-2 mx-auto pt-6">
             <form action="#" method="POST">
                 <div class="shadow overflow-hidden sm:rounded-md p-4">
                     <div class="col-span-6 sm:col-span-3">
