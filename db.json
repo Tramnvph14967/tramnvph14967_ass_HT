@@ -1,20 +1,13 @@
 {
-  "users": [
+  "accounts": [
     {
+      "id": 1,
+      "lastname": "nguyễn",
+      "firstname": "trăm",
+      "img": "https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/18/photo1629246435980-1629246436180311658361.jpg",
+      "gender": "nam",
       "email": "tramnvph14967@gmail.com",
-      "password": "$2a$10$fkjIIuLfzwYxJ5FCoEjLI.lfHFEiFaGzweVxybs.jfCY8eB1y2URm",
-      "firstname": "trăm",
-      "lastname": "nguyễn",
-      "gender": "nam",
-      "id": 1
-    },
-    {
-      "email": "nguyenvantram0102@gmail.com",
-      "password": "$2a$10$5eMqh5MZ8T2FtD766DB5cumBL.Ug90iWSEg.9ABVo8.jvMbTPR6bu",
-      "firstname": "trăm",
-      "lastname": "nguyễn",
-      "gender": "nam",
-      "id": 2
+      "password": "12345"
     }
   ],
   "products": [

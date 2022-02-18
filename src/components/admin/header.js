@@ -19,6 +19,8 @@ const Dashboard = {
                       <a href="/admin/product" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Product</a>
         
                       <a href="/admin/news" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">News</a>
+
+                      <a href="/admin/accounts" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accounts</a>
                     </div>
                   </div>
                 </div>
@@ -87,7 +89,8 @@ const Dashboard = {
                 <a href="/admin/product" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Product</a>
         
                 <a href="/admin/news" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">News</a>
-        
+                
+                <a href="/admin/accounts" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accounts</a>
               </div>
               <div class="pt-4 pb-3 border-t border-gray-700">
                 <div class="flex items-center px-5">

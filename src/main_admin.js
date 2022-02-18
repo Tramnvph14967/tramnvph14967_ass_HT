@@ -13,6 +13,13 @@ import news_list from "./pages/admin/news/index";
 import add_news from "./pages/admin/news/add";
 import edit_news from "./pages/admin/news/edit";
 
+//accounts
+import accounts_list from "./pages/admin/accounts/index";
+import add_accounts from "./pages/admin/accounts/add";
+import edit_accounts from "./pages/admin/accounts/edit";
+
+
+
 
 import { router } from "./main";
 
@@ -46,6 +53,16 @@ router.on({
     },
     "/admin/news/edit/:id": ({data}) => {
         print(edit_news, data.id);
+    },
+    //accounts
+    "/admin/accounts": () => {
+        print(accounts_list);
+    },
+    "/admin/accounts/add": () => {
+        print(add_accounts);
+    },
+    "/admin/accounts/edit/:id": ({data}) => {
+        print(edit_accounts, data.id);
     },
 });
 router.notFound(() => render("Not Found Page"));
