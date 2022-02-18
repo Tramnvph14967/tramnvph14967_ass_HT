@@ -20,10 +20,10 @@
   "products": [
     {
       "id": "1",
-      "name": "shose_1",
-      "img": "http://placeimg.com/640/480/fashion",
-      "desc": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-      "price": "500"
+      "name": "shose_13333",
+      "img": "",
+      "desc": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandalsaaaaaaaaa",
+      "price": "50044444"
     },
     {
       "id": "2",
@@ -33,14 +33,13 @@
       "price": "500"
     }
   ],
-    "new": [
-      {
-        "id": 1,
-        "tieude": "Chào ngày mới",
-        "hinhanh": "Nội dung tóm tắt bài viết1",
-        "noidung": "Nội dung chi tiết bài viết2",
-        "chitet": "Nội dung chi tiết bài viết3"
-      }
-      
-    ]
-  }
+  "new": [
+    {
+      "id": 1,
+      "tieude": "Chào ngày mới",
+      "hinhanh": "Nội dung tóm tắt bài viết1",
+      "noidung": "Nội dung chi tiết bài viết2",
+      "chitet": "Nội dung chi tiết bài viết3"
+    }
+  ]
+}

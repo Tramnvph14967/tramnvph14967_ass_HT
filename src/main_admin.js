@@ -2,9 +2,9 @@ import Navigo from "navigo";
 import Header from "./components/admin/header";
 import Footer from "./components/admin/footer";
 import dashboard from "./pages/admin/dashboard";
-import News from "./pages/admin/news/index";
-import Add from "./pages/admin/news/add";
-import Edit from "./pages/admin/news/edit";
+import Product from "./pages/admin/product/index";
+import Add from "./pages/admin/product/add";
+import Edit from "./pages/admin/product/edit";
 
 
 import { router } from "./main";
@@ -20,13 +20,13 @@ router.on({
     "/admin/dashboard": () => {
         print(dashboard);
     },
-    "/admin/news": () => {
-        print(News);
+    "/admin/product": () => {
+        print(Product);
     },
-    "/admin/news/add": () => {
+    "/admin/product/add": () => {
         print(Add);
     },
-    "/admin/news/edit/:id": ({data}) => {
+    "/admin/product/edit/:id": ({data}) => {
         print(Edit, data.id);
     },
 });
