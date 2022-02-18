@@ -1,4 +1,3 @@
-
 import { get, update } from "../../../api/product";
 
 const Edit = {
@@ -59,7 +58,7 @@ const Edit = {
             desc: document.querySelector('#desc-product').value,
             price: document.querySelector('#price-product').value,
           });
-    
+          document.location.href="/admin/product";
         });
       },
 };

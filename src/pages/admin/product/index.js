@@ -1,6 +1,6 @@
 // import TT_SV from "../../../data";
 import axios from "axios";
-import { getAll } from '../../../api/product';
+import { getAll, remove } from '../../../api/product';
 import { reRender } from "../../../utils/reRender";
 const News = {
     async render() {
@@ -72,8 +72,8 @@ const News = {
 
                                        
                                     </td>
-                                    <td class="px-6 py-4 text-right text-sm font-medium">
-                                        <button data-id="${product.id}" class="btn inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Delete</button>
+                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                        <button data-id=${product.id} class="bnt btn-remove inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Xóa</button>
                                     </td>
                                     </td>
                                   </tr>
@@ -92,23 +92,23 @@ const News = {
         `;
     },
     afterRender() {
-        // Lấy toàn bộ button có class .btn
-        const btns = document.querySelectorAll(".btn");
-        btns.forEach((buttonElement) => {
-            // lấy id button thông qua thuộc tính data-id
-            const id = buttonElement.dataset.id;
-            buttonElement.addEventListener("click", () => {
-                // Xoa phan tu trong mang dua tren ID
-                const confirm = window.confirm("Bạn có muốn xóa hay không?");
-                if(confirm){
-                  // call api xóa
-                  remove(id)
-                    .then(() => console.log('Bạn đã xóa thành công'))
-                    .then(() => reRender(AdminNews, "#app"));
+        // lấy toàn bộ danh sách button có class là .btn
+        const buttons = document.querySelectorAll(".bnt");
+        // tạo vòng lặp để lấy ra từng button
+        buttons.forEach((button) => {
+            // sử dụng dataset để lấy id từ data-*
+            const { id } = button.dataset;
+            // click vào button thì xóa phần tử trong mảng
+            // dựa vào ID vừa lấy được
+            button.addEventListener("click", () => {
+                const confirm = window.confirm("Bạn chắc chắn muốn xóa không?");
+                if (confirm) {
+                    remove(id).then(() => {
+                        reRender(News, "#content");
+                    });
                 }
             });
         });
     },
-
 };
 export default News;
