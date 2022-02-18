@@ -21,18 +21,18 @@
     {
       "id": "2",
       "name": "shose_2222",
-      "img": "",
+      "img": "https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/18/photo1629246435980-1629246436180311658361.jpg",
       "desc": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
       "price": "500"
     }
   ],
-  "new": [
+  "news": [
     {
       "id": 1,
-      "tieude": "Chào ngày mới",
-      "hinhanh": "Nội dung tóm tắt bài viết1",
-      "noidung": "Nội dung chi tiết bài viết2",
-      "chitet": "Nội dung chi tiết bài viết3"
+      "name": "Chào ngày mới",
+      "img": "https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/18/photo1629246435980-1629246436180311658361.jpg",
+      "desc": "Nội dung chi tiết bài viết2",
+      "detail": "Nội dung chi tiết bài viết3"
     }
   ]
 }
