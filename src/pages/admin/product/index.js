@@ -36,7 +36,7 @@ const News = {
                               </thead>
 
                               <tbody class="bg-white divide-y divide-gray-200">
-                                  <!-- Tin Tức Sinh Viên -->
+                                  
                                   ${data.map((product) => `
                                   <tr>
                                   <td class="px-6 py-4 whitespace-nowrap">

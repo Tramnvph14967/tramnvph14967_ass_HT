@@ -2,7 +2,7 @@ import Navigo from "navigo";
 import HomePage from "./pages/client/home";
 import Footer from "./components/client/footer";
 import Header from "./components/client/header";
-import DetailNewsPage from "./pages/client/detailNews";
+import detail_product from "./pages/client/detail_product";
 import signin from "./pages/client/signin";
 import Signup from "./pages/client/signup";
 import Contact from "./pages/client/contact";
@@ -31,10 +31,15 @@ router.on({
     "/Product": () => {
         print(Product);
     },
-    "/news/:id": (value) =>{
-        console.log(value.data.id);
-        print(DetailNewsPage.render(value.data.id));
+    "/products/:id": (value) => {
+        print(detail_product, value.data.id);
     },
+
+
+    // "/news/:id": (value) =>{
+    //     console.log(value.data.id);
+    //     print(DetailNewsPage.render(value.data.id));
+    // },
     "/contact": () => {
         print(Contact);
     },
