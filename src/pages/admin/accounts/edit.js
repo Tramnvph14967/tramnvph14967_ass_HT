@@ -49,6 +49,12 @@ const Edit = {
                     </span>
                     <input type="text" id="password-account" class="mt-1 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="" value="${data.password}"/>
                 </div>
+                <div class="col-span-6 sm:col-span-3">
+                    <span class=" after:ml-0.5 after:text-red-500 block text-sm font-medium text-gray-700">
+                    phone:
+                    </span>
+                    <input type="text" id="phone-account" class="mt-1 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="" value="${data.phone}"/>
+                </div>
                 <div class="flex">
                     <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
                     <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Update</button>
@@ -71,6 +77,7 @@ const Edit = {
             gender: document.querySelector('#gender-account').value,
             email: document.querySelector('#email-account').value,
             password: document.querySelector('#password-account').value,
+            phone: document.querySelector('#phone-account').value,
           });
           document.location.href="/admin/accounts";
         });

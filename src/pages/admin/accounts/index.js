@@ -29,6 +29,7 @@ const News = {
                                       <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">gender</th>
                                       <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">email</th>
                                       <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">password</th>
+                                      <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">phone</th>
                                       <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-900 uppercase tracking-wider">Sửa
                                       </th>
                                       <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-900 uppercase tracking-wider"> Xóa
@@ -72,6 +73,9 @@ const News = {
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
                                         ${accounts.password}
+                                    </td>
+                                    <td class="px-2 py-2 text-sm text-gray-700">
+                                        ${accounts.phone}
                                     </td>
                                     <td class="px-6 py-4 text-right text-sm font-medium">
                                         <a href="/admin/accounts/edit/${accounts.id}"

@@ -1,3 +1,5 @@
+import axios from "axios";
+import { add } from "../../api/account"
 const Signup = {
   render() {
         return /* html */`
@@ -12,28 +14,36 @@ const Signup = {
             </h2>
             
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form class="mt-8 space-y-6" action="#" id="form-add" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
-              <div>
-                <label for="surname" class="sr-only">Surname</label>
-                <input id="surname" name="surname" type="surname" autocomplete="surname" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="surname">
+              <div class="flex py-2">
+                <label class="py-2">lastname:*</label>
+                <input id="lastname-account" name="lastname" type="surname" autocomplete="lastname" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="lastname">
               </div>
-              <div>
-                <label for="name" class="sr-only">Name</label>
-                <input id="name" name="name" type="name" autocomplete="name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="name">
+              <div class="flex py-2">
+                <label class="py-2">firstname:*</label>
+                <input id="firstname-account" name="firstname" type="firstname" autocomplete="firstname" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="firstname">
               </div>
-              <div>
-                <label for="phone" class="sr-only">phone</label>
-                <input id="phone" name="phone" type="phone" autocomplete="phone" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="phone">
+              <div class="flex py-2">
+                <label class="py-2">img:*</label>
+                <input id="img-account" name="img" type="file" autocomplete="img" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="img">
               </div>
-              <div>
-                <label for="email-address" class="sr-only">Email address</label>
-                <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email">
+              <div class="flex py-2">
+                <label class="py-2">gender:*</label>
+                <input id="gender-account" name="gender" type="text" autocomplete="gender" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="gender">
               </div>
-              <div>
-                <label for="password" class="sr-only">Password</label>
-                <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+              <div class="flex py-2">
+                <label class="py-2">email:*</label>
+                <input id="email-account" name="email" type="text" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="email">
+              </div>
+              <div class="flex py-2">
+                <label class="py-2">password:*</label>
+                <input id="password-account" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="password">
+              </div>
+              <div class="flex py-2">
+                <label class="py-2" >phone:*</label>
+                <input id="phone-account" name="phone" type="phone" autocomplete="current-phone" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="phone">
               </div>
             </div>
       
@@ -65,6 +75,48 @@ const Signup = {
         
         
         `;
+    },
+    afterRender() {
+      const formAdd = document.querySelector("#form-add");
+      const imgproduct = document.querySelector('#img-account');
+  
+      imgproduct.addEventListener('change', async (e) => {
+        const file = e.target.files[0];
+        const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/shose/image/upload"
+  
+        const formData = new FormData();
+  
+        formData.append('file', file);
+        formData.append('upload_preset', "uyd4thcf");
+  
+      // call api cloudinary
+      
+        const response = await axios.post(CLOUDINARY_API, formData, {
+          headers: {
+            "Content-Type": "application/form-data"
+          }
+        });
+        console.log(response.data.url);
+  
+  
+        formAdd.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          add({
+
+              "lastname": document.querySelector('#lastname-account').value,
+              "firstname": document.querySelector('#firstname-account').value,
+              "img": response.data.url,
+              "gender": document.querySelector('#gender-account').value,
+              "email": document.querySelector('#email-account').value,
+              "password": document.querySelector('#password-account').value,
+              "phone": document.querySelector('#phone-account').value,
+          });
+              document.location.href="/signin";
+        });
+      });
+  
+      
     },
 };
 export default Signup;

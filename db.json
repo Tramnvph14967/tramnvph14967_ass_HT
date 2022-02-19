@@ -1,13 +1,24 @@
 {
   "accounts": [
     {
-      "id": 1,
-      "lastname": "nguyễn",
-      "firstname": "trăm",
-      "img": "C:\\fakepath\\263498757_10159515590632440_2865814427984870647_n.jpg",
+      "lastname": "Trần",
+      "firstname": "Sự",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645236044/uhg0vzhcfiuktkaukty2.jpg",
       "gender": "nam",
       "email": "tramnvph14967@gmail.com",
-      "password": "12345"
+      "password": "123456",
+      "phone": "0966493119",
+      "id": 2
+    },
+    {
+      "lastname": "Nguyễn",
+      "firstname": "Trăm",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645237116/lhsbw8j3fqwdwcwlxutj.jpg",
+      "gender": "nam",
+      "email": "tramnvph14967@gmail.com",
+      "password": "123456",
+      "phone": "0966493119",
+      "id": 3
     }
   ],
   "products": [
