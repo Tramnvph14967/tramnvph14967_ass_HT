@@ -33,6 +33,12 @@ const Edit = {
                 </div>
                 <div class="col-span-6 sm:col-span-3">
                     <span class=" after:ml-0.5 after:text-red-500 block text-sm font-medium text-gray-700">
+                    detail:
+                    </span>
+                    <textarea name="detail" id="detail-product" cols="30" rows="5" class="mt-1 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">${data.detail}</textarea>
+                </div>
+                <div class="col-span-6 sm:col-span-3">
+                    <span class=" after:ml-0.5 after:text-red-500 block text-sm font-medium text-gray-700">
                     price:
                     </span>
                     <input type="number" id="price-product" class="mt-1 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="" value="${data.price}"/>
@@ -56,6 +62,7 @@ const Edit = {
             name: document.querySelector('#name-product').value,
             img: document.querySelector('#img-product').value,
             desc: document.querySelector('#desc-product').value,
+            detail: document.querySelector('#detail-product').value,
             price: document.querySelector('#price-product').value,
           });
           document.location.href="/admin/product";

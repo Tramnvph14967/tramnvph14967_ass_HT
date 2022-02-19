@@ -13,7 +13,7 @@ const News = {
           <div class="flex flex-col">
               <div>
                   <td class="px-6 py-4 text-right text-sm font-medium w-2">
-                      <a href="/admin/product/add" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Thêm Mới</a>
+                      <a href="/admin/product/add" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add_Product</a>
                   </td>
               </div>
               <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
