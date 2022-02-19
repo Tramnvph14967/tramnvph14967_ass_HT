@@ -8,7 +8,7 @@ import Signup from "./pages/client/signup";
 import Contact from "./pages/client/contact";
 import Product from "./pages/client/product";
 import cart from "./pages/client/cart";
-import error from "./pages/client/404";
+
 
 export const router = new Navigo("/", { linksSelector: "a", hash: true });// router thừa kế các thuộc tính của NAvigo, link để không load trang
 
@@ -52,9 +52,7 @@ router.on({
     "/cart": () => {
         print(cart);
     },
-    "/error": () => {
-        print(error);
-    },
+   
     
 });
 

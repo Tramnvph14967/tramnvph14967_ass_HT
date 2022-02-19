@@ -66,5 +66,28 @@
       "detail": "Chi tiết tin tức 2",
       "id": 2
     }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Nguyễn văn trăm",
+      "phone": "0966493119",
+      "gmail": "tramnvph14967@gmail.com",
+      "message": "Cần hỗ trợ 111"
+    },
+    {
+      "name": "Nguyễn Văn Huy",
+      "phone": "0326869406",
+      "gmail": "tramnvph14967@gmail.com",
+      "message": "Tôi cần hỗ trợ tư vấn về đặt đơn hàng",
+      "id": 2
+    },
+    {
+      "name": "Nguyễn văn sự",
+      "phone": "0326869406",
+      "gmail": "tramnvph14967@gmail.com",
+      "message": "saaaaaaaaa",
+      "id": 3
+    }
   ]
 }

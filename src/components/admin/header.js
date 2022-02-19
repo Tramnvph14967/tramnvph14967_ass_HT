@@ -21,6 +21,8 @@ const Dashboard = {
                       <a href="/admin/news" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">News</a>
 
                       <a href="/admin/accounts" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accounts</a>
+
+                      <a href="/admin/contacts" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacts</a>
                     </div>
                   </div>
                 </div>

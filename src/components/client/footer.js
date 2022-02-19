@@ -5,8 +5,10 @@ const Footer = {
             <div class="lg:flex  lg:mt-3 md:mx-10 lg:mx-20 lg:justify-between">
                 <div class="mb-4 lg:columns-1 w-96">
                     <p class="text-white font-bold mb-1 mt-3">About Us</p>
-                    <p class="text-gray-200 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                    </p>
+                    <p class="text-gray-200 text-sm">Address: <a href="">Cđ-FPT Đường Trịnh Văn Bô - Nam Từ Liêm - Hà Nội</a></p>
+                    <p class="text-gray-200 text-sm">CALL ONLINE (08:00 - 21:00 every day)</p>
+                    <p class="text-gray-200 text-sm">Phone: <a href="">0326869406</a></p>
+                    <p class="text-gray-200 text-sm">All days of the week (Except Lunar New Year)</p>
                 </div>
                 <div class="mb-4  lg:mt-3">
                     <h3 class="text-white font-bold mb-2 lg:mb-4"> Social Media</h3>
@@ -71,14 +73,13 @@ const Footer = {
                     </div>
                 </div>
                 <div class="lg:mt-3 mb-4">
-                    <h3 class="text-white font-bold mb-2 lg:mb-2">Navigate</h3>
+                    <h3 class="text-white font-bold mb-2 lg:mb-2">Category</h3>
                     <div class="columns-2 md:columns-3 lg:columns-2">
-                        <a class="text-gray-200" href="">Navigate 0</a><br>
-                        <a href="" class="text-gray-200">Navigate 1</a><br>
-                        <a class="text-gray-200" href="">Navigate 2</a><br>
-                        <a class="text-gray-200" href="">Navigate 3</a><br>
-                        <a href="" class="text-gray-200">Navigate 4</a><br>
-                        <a href="" class="text-gray-200">Navigate 5</a><br>
+                        <a href="" class="text-gray-200">Category 1</a><br>
+                        <a class="text-gray-200" href="">Category 2</a><br>
+                        <a class="text-gray-200" href="">Category 3</a><br>
+                        <a href="" class="text-gray-200">Category 4</a><br>
+                        <a href="" class="text-gray-200">Category 5</a><br>
                     </div>
                 </div>
             </div>
