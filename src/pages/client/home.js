@@ -13,14 +13,14 @@ const HomePage = {
             
                 <div class="flex flex-col items-center mx-auto">
                 <div class="w-full bg-white rounded overflow-x-hidden flex snap-x">
-                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-1">
-                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+                    <div class="border-4 border-black-900 snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-1">
+                        <img src="https://t92store.com/wp-content/uploads/2021/05/BANNER-JORDAN-1.jpg" alt="">
                     </div>
-                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-2">
-                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg" alt="">
+                    <div class="border-4 border-black-900 snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-2">
+                        <img src="https://t92store.com/wp-content/uploads/2021/05/BANNER-CONVERSE.jpg" alt="">
                     </div>
-                    <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-3">
-                        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+                    <div class="border-4 border-black-900 snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 " id="slide-3">
+                        <img src="https://theme.hstatic.net/1000381774/1000494179/14/collection_banner.jpg?v=190" alt="">
                     </div>
                 </div>
                 <div class="flex">
@@ -72,11 +72,11 @@ const HomePage = {
         </section>
             <div>
                 <div class="md:flex mt-4 md:-mx-4">
-                    <div class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
+                    <div class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2" style="background-image: url('https://x9shop.vn/wp-content/uploads/2020/08/banner111-1400x474.jpg')">
                         <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
                             <div class="px-10 max-w-xl">
-                                <h2 class="text-2xl text-white font-semibold">Back Pack</h2>
-                                <p class="mt-2 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
+                                <h2 class="text-2xl text-white font-semibold">Style Shoes</h2>
+                                <p class="mt-2 text-gray-400">✓ Guaranteed Quality ✓ Very Good Price ✓ Nationwide Delivery ✓ Fast Online Purchase ✓</p>
                                 <button class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                     <span>Shop Now</span>
                                     <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
@@ -84,11 +84,12 @@ const HomePage = {
                             </div>
                         </div>
                     </div>
-                    <div class="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                    <div class="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2" style="background-image: url('https://giaynhapkhau68.com/wp-content/uploads/2020/08/footwear-mens-banner-2.jpg')">
                         <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
                             <div class="px-10 max-w-xl">
-                                <h2 class="text-2xl text-white font-semibold">Games</h2>
-                                <p class="mt-2 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
+                                <h2 class="text-2xl text-white font-semibold">Trendy Shoes</h2>
+                                <p class="mt-2 text-gray-400">
+                                Trendy Shoes You Should Know. ✓ Guaranteed Quality ✓ Very Good Price ✓ Nationwide Delivery ✓ Fast Online Purchase ✓.</p>
                                 <button class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                     <span>Shop Now</span>
                                     <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
