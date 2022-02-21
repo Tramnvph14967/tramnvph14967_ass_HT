@@ -86,7 +86,7 @@ const Add = {
     
           formAdd.addEventListener("submit", (e) => {
             e.preventDefault();
-
+            
             add({
 
                 "lastname": document.querySelector('#lastname-account').value,
@@ -96,6 +96,9 @@ const Add = {
                 "email": document.querySelector('#email-account').value,
                 "password": document.querySelector('#password-account').value,
                 "phone": document.querySelector('#phone-account').value,
+                if(lastname = ""){
+                    alert("Không được bỏ trống");
+                }
             });
                 document.location.href="/admin/accounts";
           });

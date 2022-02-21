@@ -74,7 +74,7 @@ const Signin = {
                 });
                 localStorage.setItem('user', JSON.stringify(response.data.user));
                 if(response.data.user.id === 1){
-                    document.location.href="/admin/news";
+                    document.location.href="/admin/dashboard";
                 } else {
                     document.location.href="/";
                 }

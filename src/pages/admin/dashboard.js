@@ -1,3 +1,4 @@
+import header from "../../components/admin/header";
 const AboutPage = {
     render() {
         return /* html */`
@@ -16,5 +17,9 @@ const AboutPage = {
             </div>
         `;
     },
+    afterRender() {
+        header.afterRender();
+      },
+    
 };
 export default AboutPage;

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { getAll } from '../../api/product';
 import { reRender } from "../../utils/reRender";
+import nav from "../../components/client/nav";
 
 const HomePage = {
     async render() {
@@ -153,6 +154,9 @@ const HomePage = {
         </div>
         `;
     },
+    afterRender() {
+        nav.afterRender();
+      },
 };
 
 export default HomePage;

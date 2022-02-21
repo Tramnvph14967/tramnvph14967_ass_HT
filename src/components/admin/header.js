@@ -1,4 +1,5 @@
 import nav from "./nav";
+import { reRender } from "../../utils/reRender";
 
 const Dashboard = {
   render() {
@@ -36,10 +37,12 @@ const Dashboard = {
                         <button type="button" class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                           <span class="sr-only">Open user menu</span>
                           
-                          <div class="ml-3">
-                            <div class="text-base font-medium leading-none text-white pt-2">Nguyễn Văn Trăm</div>
-                            <div class="text-sm font-medium leading-none text-gray-400 pt-2 ">tramnvph14967@fpt.edu.vn</div>
-                        </div>
+                         
+                          ${localStorage.getItem("user") ? `
+                            <div class="flex items-center"><span class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium  hover:bg-gray-500" id="account"></span></div>
+                            <div><a href="/" class="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium  hover:bg-gray-500" id="logout">Logout</a></div>
+                        ` : ""}
+
                         </button>
                       </div>
                      
@@ -99,10 +102,22 @@ const Dashboard = {
                   <div class="flex-shrink-0">
                     <img class="h-10 w-10 rounded-full" src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/241519190_1105170456955298_4454964298551639504_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wQW1BVAM0HoAX-ic436&tn=GAXgTIe1gZJS4IAR&_nc_ht=scontent.fhan15-1.fna&oh=00_AT8dj8M3LBsEZaINn9Oem3odJSnTxCa7f4dFT8DbvYcbiQ&oe=61E69366" alt="">
                   </div>
-                  <div class="ml-3">
-                    <div class="text-base font-medium leading-none text-white">Nguyễn Văn Trăm</div>
-                    <div class="text-sm font-medium leading-none text-gray-400">tramnvph14967@fpt.edu.vn</div>
-                  </div>
+
+
+
+
+                  ${localStorage.getItem("user") ? `
+                      <div class="flex items-center"><span class="block py-3 px-4 text-black" id="account"></span></div>
+                      <div><a href="/" class="block py-3 px-4 text-black text-center  hover:bg-blue-500" id="logout">Logout</a></div>
+                  ` : ""}
+
+
+
+
+
+
+
+
                   <button type="button" class="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span class="sr-only">View notifications</span>
                     <!-- Heroicon name: outline/bell -->
@@ -120,13 +135,24 @@ const Dashboard = {
                 <div class="max-w-7xl text-right p-4">
                   <a href="/home" class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium" aria-current="page">Trang Web</a>
                   <a href="" class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium" aria-current="page">Hồ Sơ</a>
-                  <a href="#" class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium">Cài Đặt</a>
-                  <a href="#" class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium">Đăng Xuất</a>
+                  
+                  
                 </div>
               </header>
             </div>
       </div>
         `;
     },
+    afterRender(){
+      const account = document.querySelector('#account');
+      const btnLogout = document.querySelector('#logout');
+      account.innerHTML = JSON.parse(localStorage.getItem('user')).email;
+
+      btnLogout.addEventListener('click', function(){
+         localStorage.removeItem('user');
+         alert('Ban da logout thanh cong');
+         reRender(Header, "#header");
+      })
+  }
 };
 export default Dashboard;

@@ -1,4 +1,5 @@
 import { reRender } from "../../utils/reRender";
+
 const Nav = {
     render() {
         return /* html */`
@@ -17,13 +18,10 @@ const Nav = {
                 <div class="flex items-center justify-end w-full">
                     <!-- Profile dropdown -->
                     
-                      <div>
-                        <div>
-                            <div id="account" class="text-sm font-medium leading-none text-green pt-2">Nguyễn Văn Trăm</div>
-                            ${localStorage.getItem('account') ? '<button id="logout">Logout</button>' : ""}
-                        </div>
-                        
-                      </div>
+                    ${localStorage.getItem("user") ? `
+                      <div class="flex items-center"><span class="block py-3 px-4 text-black" id="account"></span></div>
+                      <div><a href="/" class="block py-3 px-4 text-black text-center  hover:bg-gray-500" id="logout">Logout</a></div>
+                  ` : ""}
 
 
 
@@ -67,10 +65,10 @@ const Nav = {
     afterRender(){
         const account = document.querySelector('#account');
         const btnLogout = document.querySelector('#logout');
-        account.innerHTML = JSON.parse(localStorage.getItem('account')).email;
+        account.innerHTML = JSON.parse(localStorage.getItem('user')).email;
 
         btnLogout.addEventListener('click', function(){
-           localStorage.removeItem('account');
+           localStorage.removeItem('user');
            alert('Ban da logout thanh cong');
            reRender(Header, "#header");
         })
