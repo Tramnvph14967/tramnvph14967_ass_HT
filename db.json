@@ -55,15 +55,23 @@
       "detail": "aaaaaaaaaaaaa",
       "price": "3333",
       "id": "mYuNYHe"
+    },
+    {
+      "name": "shose_5",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645436127/nwx7bopnuzqelk3wwbcq.jpg",
+      "desc": "bbbbbbbbbbbbbbbbbbbbbbbb",
+      "detail": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "price": "33333333",
+      "id": "cCCelOu"
     }
   ],
   "news": [
     {
-      "id": 2,
-      "name": "Tin tức 2",
-      "img": "",
-      "desc": "Chi tiết tin tức 2",
-      "detail": "Đặc điểm tin tức 2"
+      "name": "Tin tức 1",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645436449/kt1laasc5ejofe3vgzve.jpg",
+      "desc": "Đặc điểm tin tức 1",
+      "detail": "Chi tiết tin tức 1",
+      "id": 1
     }
   ],
   "contacts": [
