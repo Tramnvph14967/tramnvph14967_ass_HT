@@ -40,49 +40,49 @@ const News = {
 
                               <tbody class="bg-white divide-y divide-gray-200">
                                   <!-- Tin Tức Sinh Viên -->
-                                  ${data.map((accounts) => `
+                                  ${data.map((users) => `
                                   <tr>
                                   <td class="px-6 py-4 whitespace-nowrap">
                                         <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                            ${accounts.id}
+                                            ${users.id}
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 text-sm">
                                         <div class="text-sm text-gray-900">
-                                            ${accounts.lastname}
+                                            ${users.lastname}
                                         </div>
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${accounts.firstname}
+                                        ${users.firstname}
                                     </td>
                                     <td class="px-6 py-4 text-sm whitespace-nowrap">
                                         <div class="flex items-center">
                                             <div class="flex-shrink-0 h-10 w-10">
                                                 <img class="h-10 w-10 rounded-full" src="
-                                                    ${accounts.img}
+                                                    ${users.img}
                                                 " alt="">
                                             </div>
                                         </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${accounts.gender}
+                                        ${users.gender}
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${accounts.email}
+                                        ${users.email}
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${accounts.password}
+                                        ${users.password}
                                     </td>
                                     <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${accounts.phone}
+                                        ${users.phone}
                                     </td>
                                     <td class="px-6 py-4 text-right text-sm font-medium">
-                                        <a href="/admin/accounts/edit/${accounts.id}"
+                                        <a href="/admin/users/edit/${users.id}"
                                             class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Update</a>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <button data-id=${accounts.id} class="bnt btn-remove inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Xóa</button>
+                                        <button data-id=${users.id} class="bnt btn-remove inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Xóa</button>
                                     </td>
                                     </td>
                                   </tr>

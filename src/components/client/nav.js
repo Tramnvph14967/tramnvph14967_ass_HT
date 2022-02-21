@@ -1,3 +1,4 @@
+import { reRender } from "../../utils/reRender";
 const Nav = {
     render() {
         return /* html */`
@@ -17,14 +18,11 @@ const Nav = {
                     <!-- Profile dropdown -->
                     
                       <div>
-                        <button type="button" class="max-w-xs p-2 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                          
-                          <img class="h-8 w-8 rounded-full" src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="">
-                          <div class="ml-2">
-                            <div class="text-sm font-medium leading-none text-green pt-2">Nguyễn Văn Trăm</div>
-                            <div class="text-sm font-medium leading-none text-green pt-2">Tramnvph14967@gmail.com</div>
-                            </div>
-                        </button>
+                        <div>
+                            <div id="account" class="text-sm font-medium leading-none text-green pt-2">Nguyễn Văn Trăm</div>
+                            ${localStorage.getItem('account') ? '<button id="logout">Logout</button>' : ""}
+                        </div>
+                        
                       </div>
 
 
@@ -66,5 +64,16 @@ const Nav = {
         
     </header>`;
     },
+    afterRender(){
+        const account = document.querySelector('#account');
+        const btnLogout = document.querySelector('#logout');
+        account.innerHTML = JSON.parse(localStorage.getItem('account')).email;
+
+        btnLogout.addEventListener('click', function(){
+           localStorage.removeItem('account');
+           alert('Ban da logout thanh cong');
+           reRender(Header, "#header");
+        })
+    }
 };
 export default Nav;

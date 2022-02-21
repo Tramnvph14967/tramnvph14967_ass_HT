@@ -1,5 +1,5 @@
 import Nav from "./nav";
-
+import { reRender } from "../../utils/reRender";
 const Header = {
     render() {
         return /* html */`

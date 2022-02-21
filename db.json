@@ -1,22 +1,32 @@
 {
-  "accounts": [
+  "users": [
     {
       "lastname": "Trần",
       "firstname": "Sự",
       "img": "http://res.cloudinary.com/shose/image/upload/v1645236044/uhg0vzhcfiuktkaukty2.jpg",
       "gender": "nam",
       "email": "tramnvph14967@gmail.com",
-      "password": "123456",
+      "password": "$2a$10$TkGMJaHrLCo4Dh.cXXb.OOycQw0ow5TBpcsn44LyeV.IN3Z.KLPtC",
       "phone": "0966493119",
-      "id": 2
+      "id": 1
     },
     {
       "lastname": "Nguyễn",
-      "firstname": "Trăm",
-      "img": "http://res.cloudinary.com/shose/image/upload/v1645237116/lhsbw8j3fqwdwcwlxutj.jpg",
+      "firstname": "Nam",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645431779/sh9tuzshuccl9yvurc4h.jpg",
+      "gender": "Nam",
+      "email": "nguyenvantram0102@gmail.com",
+      "password": "$2a$10$TkGMJaHrLCo4Dh.cXXb.OOycQw0ow5TBpcsn44LyeV.IN3Z.KLPtC",
+      "phone": "0326869406",
+      "id": 2
+    },
+    {
+      "lastname": "nguyễn",
+      "firstname": "Đại",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645432885/pm4ubelbyuvvfqigsafc.jpg",
       "gender": "nam",
-      "email": "tramnvph14967@gmail.com",
-      "password": "123456",
+      "email": "anguyen@gmail.com",
+      "password": "$2a$10$TkGMJaHrLCo4Dh.cXXb.OOycQw0ow5TBpcsn44LyeV.IN3Z.KLPtC",
       "phone": "0966493119",
       "id": 3
     }
@@ -37,22 +47,23 @@
       "detail": "đạc điểm 55555555555",
       "price": "555555555555555",
       "id": "-g0jDcd"
+    },
+    {
+      "name": "shose_3",
+      "img": "http://res.cloudinary.com/shose/image/upload/v1645435701/s6w4m0p2vqvipfyr1eup.jpg",
+      "desc": "aaaaaaaaa",
+      "detail": "aaaaaaaaaaaaa",
+      "price": "3333",
+      "id": "mYuNYHe"
     }
   ],
   "news": [
     {
-      "id": 1,
-      "name": "Chào ngày mới",
-      "img": "https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/18/photo1629246435980-1629246436180311658361.jpg",
-      "desc": "Nội dung chi tiết bài viết2",
-      "detail": "Nội dung chi tiết bài viết3"
-    },
-    {
+      "id": 2,
       "name": "Tin tức 2",
-      "img": "http://res.cloudinary.com/shose/image/upload/v1645181441/d1fr431wi39es68us2up.jpg",
-      "desc": "Đặc điểm tin tức 2",
-      "detail": "Chi tiết tin tức 2",
-      "id": 2
+      "img": "",
+      "desc": "Chi tiết tin tức 2",
+      "detail": "Đặc điểm tin tức 2"
     }
   ],
   "contacts": [
