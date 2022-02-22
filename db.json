@@ -65,6 +65,16 @@
       "id": "cCCelOu"
     }
   ],
+  "categorys": [
+    {
+      "id": 1,
+      "name": "shose_1"
+    },
+    {
+      "id": 2,
+      "name": "shose_2"
+    }
+  ],
   "news": [
     {
       "name": "Tin tức 1",

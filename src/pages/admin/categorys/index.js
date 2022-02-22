@@ -1,6 +1,6 @@
 // import TT_SV from "../../../data";
 import axios from "axios";
-import { getAll, remove } from '../../../api/news';
+import { getAll, remove } from '../../../api/category';
 import { reRender } from "../../../utils/reRender";
 const News = {
     async render() {
@@ -13,7 +13,7 @@ const News = {
           <div class="flex flex-col">
               <div>
                   <td class="px-6 py-4 text-right text-sm font-medium w-2">
-                      <a href="/admin/news/add" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add News</a>
+                      <a href="/admin/categorys/add" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add_categorys</a>
                   </td>
               </div>
               <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -24,56 +24,36 @@ const News = {
                                   <tr>
                                       <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider"> ID </th>
                                       <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">Name</th>
-                                      <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">Img</th>
-                                      <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">desc</th>
-                                      <th scope="col" class="px-6 py-3 text-center text-left text-xs font-medium text-gray-900 uppercase tracking-wider">detail</th>
                                       <th scope="col" class="w-10 px-6 py-3 text-center text-xs font-medium text-gray-900 uppercase tracking-wider">Edit
                                       </th>
-                                      <th scope="col" class="w-10 px-6 py-3 text-center text-xs font-medium text-gray-900 uppercase tracking-wider">Delete
+                                      <th scope="col" class="w-10 px-6 py-3 text-center text-xs font-medium text-gray-900 uppercase tracking-wider"> Delete
                                       </th>
-                                     
+                                      
                                   </tr>
                               </thead>
 
-                              <tbody class="bg-white divide-y divide-gray-200">
-                                  <!-- Tin Tức Sinh Viên -->
-                                  ${data.map((news) => `
+                              <tbody class="snap-center bg-white divide-y divide-gray-200">
+                                  
+                                  ${data.map((categorys) => `
                                   <tr>
-                                  <td class="px-6 py-4 whitespace-nowrap">
+                                  <td class=" px-6 py-4 whitespace-nowrap">
                                         <span
-                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                            ${news.id}
+                                            class=" px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                            ${categorys.id}
                                         </span>
                                     </td>
                                      
-                                    <td class="px-6 py-4 text-sm">
-                                        <div class="text-sm text-gray-900">${news.name}</div>
+                                    <td class="snap-center px-6 py-4 text-sm">
+                                        <div class="text-sm text-gray-900">${categorys.name}</div>
                                     </td>
-
-                                    
-                                    <td class="px-6 py-4 text-sm whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10 rounded-full" src="${news.img}" alt="">
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </td>
-                                    <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${news.desc}
-                                    </td>
-                                    <td class="px-2 py-2 text-sm text-gray-700">
-                                        ${news.detail}
-                                    </td>
-
                                     <td class="px-6 py-4 text-right text-sm font-medium">
-                                        <a href="/admin/news/edit/${news.id}"
+                                        <a href="/admin/categorys/edit/${categorys.id}"
                                             class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Edit</a>
 
                                        
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <button data-id=${news.id} class="bnt btn-remove inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Delete</button>
+                                        <button data-id=${categorys.id} class="bnt btn-remove inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Delete</button>
                                     </td>
                                     </td>
                                   </tr>

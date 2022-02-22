@@ -23,6 +23,11 @@ import contacts_list from "./pages/admin/contacts/index";
 import add_contacts from "./pages/admin/contacts/add";
 import edit_contacts from "./pages/admin/contacts/edit";
 
+//categorys
+import categorys_list from "./pages/admin/categorys/index";
+import add_categorys from "./pages/admin/categorys/add";
+import edit_categorys from "./pages/admin/categorys/edit";
+
 
 import { router } from "./main";
 
@@ -77,6 +82,17 @@ router.on({
     "/admin/contacts/edit/:id": ({data}) => {
         print(edit_contacts, data.id);
     },
+    // DANH MỤC 
+    "/admin/categorys": () => {
+        print(categorys_list);
+    },
+    "/admin/categorys/add": () => {
+        print(add_categorys);
+    },
+    "/admin/categorys/edit/:id": ({data}) => {
+        print(edit_categorys, data.id);
+    },
+	
 });
 router.notFound(() => render("Not Found Page"));
 router.resolve();

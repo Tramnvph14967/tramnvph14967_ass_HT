@@ -2,13 +2,15 @@ import axios from "axios";
 import { getAll } from '../../api/product';
 import { reRender } from "../../utils/reRender";
 import nav from "../../components/client/nav";
+import category from '../client/category';
+
 
 const HomePage = {
     async render() {
         // Chờ thằng axios.get truy cập API và lấy dữ liệu, 
         // lấy dữ liệu xong sẽ trả về và gán vào biến response
         const { data } = await getAll();
-
+        
         return /* html */`
         <div class="p-2 mx-auto"> 
             
@@ -30,47 +32,16 @@ const HomePage = {
                     <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-3">3</a>
                 </div>
         </div>
+
+
         <section class="container mx-auto my-1 flex flex-wrap -m-4">
-            
-            <div class="p-2 md:w-40 ">
-                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
-                    <div>
-                        <a href="">
-                            <p class="text-xs font-medium ml-2 "> Danh mục 1 </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 md:w-40 ">
-                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
-                    <div>
-                        <a href="">
-                            <p class="text-xs font-medium ml-2 "> Danh mục 2 </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 md:w-40 ">
-                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
-                    <div>
-                        <a href="">
-                            <p class="text-xs font-medium ml-2 "> Danh mục 3 </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 md:w-40 ">
-                <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
-                    <div>
-                        <a href="">
-                            <p class="text-xs font-medium ml-2 "> Danh mục 4 </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
+            ${category.render()}
         </section>
+
+
+
+
+        
             <div>
                 <div class="md:flex mt-4 md:-mx-4">
                     <div class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2" style="background-image: url('https://x9shop.vn/wp-content/uploads/2020/08/banner111-1400x474.jpg')">
