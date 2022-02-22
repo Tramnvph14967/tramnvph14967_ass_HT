@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getAll, remove } from '../../api/product';
 import { reRender } from "../../utils/reRender";
-
+import categorys from './category';
 const Product = {
     async render() {
         // Chờ thằng axios.get truy cập API và lấy dữ liệu, 
@@ -10,8 +10,12 @@ const Product = {
 
 
         return /* html */`
+
         <div tabindex="0" class="p-2 focus:outline-none">
         <!-- Remove py-8 -->
+        <section class="container mx-auto my-1 flex flex-wrap -m-4">
+            ${await categorys.render()}
+        </section>
         <div class=" grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
 
             ${data.map((product) =>/*html*/ `

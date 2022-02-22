@@ -31,6 +31,7 @@ const News = {
                                       
                                   </tr>
                               </thead>
+
                               <tbody class="snap-center bg-white divide-y divide-gray-200">
                                   
                                   ${data.map((categorys) => `
@@ -48,6 +49,7 @@ const News = {
                                     <td class="px-6 py-4 text-right text-sm font-medium">
                                         <a href="/admin/categorys/edit/${categorys.id}"
                                             class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Edit</a>
+
                                        
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -56,8 +58,11 @@ const News = {
                                     </td>
                                   </tr>
                       `).join("")}
+
                       <!-- Hoạt Động Sinh Viên -->
                       </tbody>
+
+
                       </table>
                   </div>
               </div>
