@@ -8,13 +8,12 @@ const Header = {
         const { data } = await getAll();
         return /* html */`
         
-            ${data.map((cate) =>/*html*/ `
-            
+            ${data.map((categorys) =>/*html*/ `
                 <div class="p-2 md:w-40 ">
                     <div class="flex items-center p-4 bg-gray-200 rounded-lg shadow-xs cursor-pointer hover:bg-gray-500 hover:text-gray-100">
                         <div>
                             <a href="">
-                                <p class="text-xs font-medium ml-2">${cate.name}</p>
+                                <p class="text-xs font-medium ml-2">${categorys.name}</p>
                             </a>
                         </div>
                     </div>

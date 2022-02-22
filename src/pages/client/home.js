@@ -2,7 +2,7 @@ import axios from "axios";
 import { getAll } from '../../api/product';
 import { reRender } from "../../utils/reRender";
 import nav from "../../components/client/nav";
-import category from '../client/category';
+import categorys from './category';
 
 
 const HomePage = {
@@ -35,7 +35,7 @@ const HomePage = {
 
 
         <section class="container mx-auto my-1 flex flex-wrap -m-4">
-            ${category.render()}
+            ${await categorys.render()}
         </section>
 
 
