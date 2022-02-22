@@ -57,6 +57,7 @@ const Contact = {
                 
             });
                 document.location.href="/";
+                alert("Liên hệ thành công. Bạn vui lòng check Gmail để nhận được phẩn hồi");
           });
     
       },

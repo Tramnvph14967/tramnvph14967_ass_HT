@@ -49,14 +49,6 @@
       "id": "-g0jDcd"
     },
     {
-      "name": "shose_3",
-      "img": "http://res.cloudinary.com/shose/image/upload/v1645435701/s6w4m0p2vqvipfyr1eup.jpg",
-      "desc": "aaaaaaaaa",
-      "detail": "aaaaaaaaaaaaa",
-      "price": "3333",
-      "id": "mYuNYHe"
-    },
-    {
       "name": "shose_5",
       "img": "http://res.cloudinary.com/shose/image/upload/v1645436127/nwx7bopnuzqelk3wwbcq.jpg",
       "desc": "bbbbbbbbbbbbbbbbbbbbbbbb",
@@ -71,14 +63,6 @@
       "detail": "aaaaaaaaaaaaaaaaaaaaaaa",
       "price": "4444",
       "id": "AUnE601"
-    },
-    {
-      "name": "shose_7",
-      "img": "http://res.cloudinary.com/shose/image/upload/v1645524468/wuljv5gjscddn4i6hoi4.jpg",
-      "desc": "bbbbbbbbbbbbbbbbbbbbbbbb",
-      "detail": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-      "price": "444444",
-      "id": "zqmK-8m"
     }
   ],
   "categorys": [
@@ -116,10 +100,10 @@
       "id": 2
     },
     {
-      "name": "Nguyễn văn sự",
+      "name": "Nguyễn Văn Huy",
       "phone": "0326869406",
       "gmail": "tramnvph14967@gmail.com",
-      "message": "saaaaaaaaa",
+      "message": "aaaaaaaaaa",
       "id": 3
     }
   ]

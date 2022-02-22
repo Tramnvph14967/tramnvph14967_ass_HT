@@ -2,6 +2,7 @@
 import axios from "axios";
 import { getAll, remove } from '../../../api/product';
 import { reRender } from "../../../utils/reRender";
+
 const News = {
     async render() {
          // Chờ thằng axios.get truy cập API và lấy dữ liệu, 
@@ -110,5 +111,6 @@ const News = {
             });
         });
     },
+   
 };
 export default News;
