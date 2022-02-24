@@ -20,8 +20,7 @@ import edit_accounts from "./pages/admin/accounts/edit";
 
 //contact
 import contacts_list from "./pages/admin/contacts/index";
-import add_contacts from "./pages/admin/contacts/add";
-import edit_contacts from "./pages/admin/contacts/edit";
+
 
 //categorys
 import categorys_list from "./pages/admin/categorys/index";
@@ -76,12 +75,8 @@ router.on({
     "/admin/contacts": () => {
         print(contacts_list);
     },
-    "/admin/contacts/add": () => {
-        print(add_contacts);
-    },
-    "/admin/contacts/edit/:id": ({data}) => {
-        print(edit_contacts, data.id);
-    },
+   
+  
     // DANH MỤC 
     "/admin/categorys": () => {
         print(categorys_list);
